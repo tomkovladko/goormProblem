@@ -1,0 +1,21 @@
+<%- include("partials/header") %>   
+
+<div id="container">
+        <div class="header">
+        <h1>To-Do List</h1>
+        <select>
+            <option value="">Vyber osobu...</option>
+            <option value="mamka">mamka</option>
+            <option value="tato">tato</option>
+            <option value="vladko">vladko</option>
+        </select>
+    </div>
+	
+	<form action="/newItem" method="POST"> 
+        <input type="text" name="newItem" placeholder="Add New Todo">
+    </form>
+		
+        <ul></ul>
+		
+<%- include("partials/footer") %>    
+	
